@@ -22,7 +22,6 @@
 </template>
 <script type="text/javascript">
 import { LoginService } from "../service/LoginService";
-import {popMessage} from '../../common/message'
 
 export default {
   name: "login",
@@ -40,7 +39,7 @@ export default {
         // this.$message('123');
       LoginService.login().then((date)=>  {
         // popMessage.error(date);
-        this.$router.push({path:'/home'})
+        this.$router.push({path:'/home/menumanage'})
         // this.$message(date);
       });
       //   return alert(1);

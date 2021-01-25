@@ -7,6 +7,9 @@ export default {
   data() {
     return {};
   },
+  created(){
+    // alert("this is roleMahage page")
+  }
 };
 </script>
 <style>

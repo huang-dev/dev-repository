@@ -1,0 +1,130 @@
+{
+    "menu": [{
+        "icon": "el-icon-edit",
+        "title": "导航1",
+        "grade": 1,
+        "path": "",
+        "index":"1",
+        "children": [{
+            "path": "menumanage",
+            "icon": "",
+            "grade": 2,
+            "title": "选项一",
+            "index":"1-1",
+            "order": 1
+        }, {
+            "path": "rolemanage",
+            "icon": "",
+            "grade": 2,
+            "order": 2,
+            "index":"1-2",
+            "title": "选项二"
+        }]
+    }, {
+        "icon": "el-icon-location",
+        "title": "导航2",
+        "grade": 1,
+        "path": "",
+        "index":"2",
+        "children": [{
+            "path": "rolemanage",
+            "icon": "",
+            "grade": 2,
+            "title": "选项三",
+            "index":"2-1",
+            "order": 1
+        }, {
+            "path": "menumanage",
+            "icon": "",
+            "grade": 2,
+            "order": 2,
+            "index":"2-2",
+            "title": "选项四"
+        }]
+    }, {
+        "icon": "el-icon-document",
+        "title": "导航3",
+        "grade": 1,
+        "path": "",
+        "index":"3",
+        "children": []
+    }, {
+        "icon": "el-icon-document",
+        "title": "导航4",
+        "grade": 1,
+        "path": "",
+        "index":"4",
+        "children": []
+    }, {
+        "icon": "el-icon-document",
+        "title": "导航5",
+        "grade": 1,
+        "path": "",
+        "index":"5",
+        "children": []
+    }, {
+        "icon": "el-icon-document",
+        "title": "导航6",
+        "grade": 1,
+        "path": "",
+        "index":"6",
+        "children": []
+    }, {
+        "icon": "el-icon-document",
+        "title": "导航7",
+        "grade": 1,
+        "path": "",
+        "index":"7",
+        "children": []
+    }, {
+        "icon": "el-icon-document",
+        "title": "导航8",
+        "grade": 1,
+        "path": "",
+        "index":"8",
+        "children": []
+    }, {
+        "icon": "el-icon-document",
+        "title": "导航9",
+        "grade": 1,
+        "path": "",
+        "index":"9",
+        "children": []
+    }, {
+        "icon": "el-icon-document",
+        "title": "导航10",
+        "grade": 1,
+        "path": "",
+        "index":"10",
+        "children": []
+    }, {
+        "icon": "el-icon-document",
+        "title": "导航11",
+        "grade": 1,
+        "path": "",
+        "index":"11",
+        "children": []
+    }, {
+        "icon": "el-icon-document",
+        "title": "导航12",
+        "grade": 1,
+        "path": "",
+        "index":"12",
+        "children": []
+    }, {
+        "icon": "el-icon-document",
+        "title": "导航13",
+        "grade": 1,
+        "path": "",
+        "index":"13",
+        "children": []
+    }, {
+        "icon": "el-icon-document",
+        "title": "导航14",
+        "grade": 1,
+        "path": "",
+        "index":"14",
+        "children": []
+    }]
+
+}

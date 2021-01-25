@@ -7,6 +7,19 @@ import RoleManage from '@/components/home/components/system/role/RoleManage'
 
 Vue.use(Router)
 
+// 避免重复点击菜单报错 star
+const VueRouterPush = Router.prototype.push
+Router.prototype.push = function push (to) {
+  return VueRouterPush.call(this, to).catch(err => err)
+}
+
+//replace
+const VueRouterReplace = Router.prototype.replace
+Router.prototype.replace = function replace (to) {
+  return VueRouterReplace.call(this, to).catch(err => err)
+}
+// 避免重复点击菜单报错 end
+
 export default new Router({
   routes: [{
       path: '/',
@@ -18,12 +31,12 @@ export default new Router({
       name: 'home',
       component: Home,
       children: [{
-          path: '/menumanage',
+          path: 'menumanage',
           name: 'menumanage',
           component: MenuManage
         },
         {
-          path: '/rolemanage',
+          path: 'rolemanage',
           name: 'rolemanage',
           component: RoleManage
         }
