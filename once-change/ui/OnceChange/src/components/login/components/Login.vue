@@ -39,7 +39,7 @@ export default {
     onSubmit: function () {
         // this.$message('123');
       LoginService.login().then((date)=>  {
-        popMessage.error(date);
+        // popMessage.error(date);
         this.$router.push({path:'/home'})
         // this.$message(date);
       });
