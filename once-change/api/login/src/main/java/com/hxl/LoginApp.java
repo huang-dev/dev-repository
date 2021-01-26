@@ -1,11 +1,13 @@
 package com.hxl;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@MapperScan("com.hxl.*.mapper")
 @SpringBootApplication
-public class LoginMain {
+public class LoginApp {
     public static void main(String[] args) {
-        SpringApplication.run(LoginMain.class,args);
+        SpringApplication.run(LoginApp.class,args);
     }
 }

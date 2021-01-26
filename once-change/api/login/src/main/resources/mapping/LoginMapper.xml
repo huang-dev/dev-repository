@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hxl.login.mapper.LoginMapper">
+    <select id="getLoginUserById" resultType="com.hxl.login.model.UserInfo">
+        SELECT
+            auth.user_name AS userName,
+            auth.PASSWORD
+        FROM
+            auth
+        WHERE
+            auth.user_id = 1
+    </select>
+</mapper>
