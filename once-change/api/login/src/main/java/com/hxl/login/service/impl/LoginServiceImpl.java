@@ -14,11 +14,16 @@ public class LoginServiceImpl implements LoginService {
     LoginMapper loginMapper;
 
     @Override
-    public void login(int userId) {
-        UserInfo user = loginMapper.getLoginUserById(userId);
-
-        String userName =  user.getUserName();
-
-
+    public Boolean login(UserInfo userInfo) {
+        UserInfo user = loginMapper.getLoginUserById(userInfo.getUserId());
+        if(user != null){
+            if(userInfo.getPassword().equals(user.getPassword())){
+                return true;
+            }else {
+                return false;
+            }
+        }else {
+            return false;
+        }
     }
 }
