@@ -2,6 +2,6 @@ package com.hxl.login.service;
 
 public interface LoginService {
 
-    public void login();
+    public void login(int userId);
 
 }

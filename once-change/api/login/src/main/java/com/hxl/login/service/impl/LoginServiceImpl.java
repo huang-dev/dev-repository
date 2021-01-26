@@ -14,8 +14,8 @@ public class LoginServiceImpl implements LoginService {
     LoginMapper loginMapper;
 
     @Override
-    public void login() {
-        UserInfo user = loginMapper.getLoginUserById();
+    public void login(int userId) {
+        UserInfo user = loginMapper.getLoginUserById(userId);
 
         String userName =  user.getUserName();
 

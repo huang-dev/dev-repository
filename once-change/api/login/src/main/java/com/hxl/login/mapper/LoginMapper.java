@@ -9,7 +9,8 @@ public interface LoginMapper {
     /**
      * 使用用户id获取用户信息
      *
+     * @param userId 用户Id
      * @return
      */
-    UserInfo getLoginUserById();
+    UserInfo getLoginUserById(int userId);
 }
